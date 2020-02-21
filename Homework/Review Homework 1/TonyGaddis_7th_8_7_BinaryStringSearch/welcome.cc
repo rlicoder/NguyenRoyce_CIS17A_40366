@@ -1,46 +1,85 @@
-/*
- * Copyright (c) 2009-2010, Oracle and/or its affiliates. All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * * Redistributions of source code must retain the above copyright notice,
- *   this list of conditions and the following disclaimer.
- *
- * * Redistributions in binary form must reproduce the above copyright notice,
- *   this list of conditions and the following disclaimer in the documentation
- *   and/or other materials provided with the distribution.
- *
- * * Neither the name of Oracle nor the names of its contributors
- *   may be used to endorse or promote products derived from this software without
- *   specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
- * THE POSSIBILITY OF SUCH DAMAGE.
- */
-
 #include <iostream>
+#include <iomanip>
+#include <string.h>
 
-int main(int argc, char**argv) {
-    // Prints welcome message...
-    std::cout << "Welcome ..." << std::endl;
+using namespace std;
 
-    // Prints arguments...
-    if (argc > 1) {
-        std::cout << std::endl << "Arguments:" << std::endl;
-        for (int i = 1; i < argc; i++) {
-            std::cout << i << ": " << argv[i] << std::endl;
+const int NUM_NAMES = 20;
+
+void SortStrings(string names[]);
+int binarySearch(string names[], string value);
+
+int main()
+{
+    string names[NUM_NAMES] = {"Collins, Bill", "Smith, Bart", "Allen, Jim",
+                           "Griffin, Jim", "Stamey, Marty", "Rose, Geri",
+                           "Taylor, Terri", "Johnson, Jill",
+                           "Allison, Jeff", "Looney, Joe", "Wolfe, Bill",
+                           "James, Jean", "Weaver, Jim", "Pore, Bob",
+                           "Rutherford, Greg", "Javens, Renee",
+                           "Harrison, Rose", "Setzer, Cathy",
+                           "Pike, Gordon", "Holland, Beth" };
+    
+    string value;
+    
+    SortStrings(names);
+    
+    cout << "What is the name you are searching for? (Last, First): ";
+    getline(cin, value);
+    
+    int position = binarySearch(names, value);
+    
+    cout << "The position of your string is " << position;
+
+    return 0;
+}
+
+void SortStrings(string names[])
+{
+    bool swap;
+    string temp;
+    
+    do 
+    {
+        swap = false;
+        for (int count = 0; count < (NUM_NAMES-1); count++)
+        {
+            int comparison = strcmp(names[count].c_str(),names[count+1].c_str());
+            if (comparison > 0)
+            {
+                temp = names[count];
+                names[count] = names[count+1];
+                names[count+1] = temp;
+                swap = true;
+            }
+        }
+    }while(swap);
+}
+
+int binarySearch(string names[], string value)
+{
+    int first = 0;
+    int last = NUM_NAMES - 1;
+    int middle;
+    int position = -1;
+    bool found = false;
+    
+    while (!found && first <= last)
+    {
+        middle = (first + last) / 2;
+        if (names[middle] == value)
+        {
+            found = true;
+            position = middle;
+        }
+        else if (names[middle] > value)
+        {
+            last = middle - 1;
+        }
+        else
+        {
+            first = middle - 1;
         }
     }
-    
-    return 0;
+    return position;
 }
