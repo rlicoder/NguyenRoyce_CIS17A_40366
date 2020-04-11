@@ -1,0 +1,16 @@
+There are several errors that can occur in computer arithmetic
+
+The values that we are operating with (currency and units) are better represented in base 10.
+However, computers are designed to work with numbers in base two.
+This differences leads to inaccuracies in numeric representation for numbers that cannot be easily expressed in base 2.
+For example, a simple number such as 9.2 would NOT be stored as "9.2" by the computer. In fact, it is instead represented as 9.1999998093.
+These slight miscalculations (through summation) can add up over time.
+
+Another error that can occur is in the truncation of a value.
+For example, if I took 9.2, multiplied it by 100, and converted it into an integer data type, the result would be 919.
+
+The error that we face in this problem is that the monthly payment is recorded as 332.143 in the program, however there is no 3/10ths of a penny in real life.
+
+In order to counteract this error, Dr. Lehr's solution was to convert the floating point into an integer.
+This would effectively truncate the .003 in the monthly payment.
+Also, as another measure, the solution included adding half a penny, which allows for rounding, since truncation does not take that into account.
