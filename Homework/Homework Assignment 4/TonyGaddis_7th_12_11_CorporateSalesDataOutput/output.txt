@@ -1,0 +1,20 @@
+North
+First-quarter sales:1
+Second-quarter sales:2
+Third-quarter sales:3
+Fourth-quarter sales:4
+West
+First-quarter sales:5
+Second-quarter sales:6
+Third-quarter sales:7
+Fourth-quarter sales:8
+East
+First-quarter sales:9
+Second-quarter sales:10
+Third-quarter sales:11
+Fourth-quarter sales:12
+South
+First-quarter sales:13
+Second-quarter sales:14
+Third-quarter sales:15
+Fourth-quarter sales:16
