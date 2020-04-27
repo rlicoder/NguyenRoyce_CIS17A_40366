@@ -1,0 +1,7 @@
+Total Moves: 1
+     White     Black
+ Resign  
+White Pieces
+P N B K Q R 
+Black Pieces
+1 2 3 4 5 6 

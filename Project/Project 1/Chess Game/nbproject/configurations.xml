@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+Copyright (c) 2009, 2016 Oracle and/or its affiliates. All rights reserved.
+
+Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+Other names may be trademarks of their respective owners.
+
+The contents of this file are subject to the terms of either the GNU
+General Public License Version 2 only ("GPL") or the Common
+Development and Distribution License("CDDL") (collectively, the
+"License"). You may not use this file except in compliance with the
+License. You can obtain a copy of the License at
+http://www.netbeans.org/cddl-gplv2.html
+or nbbuild/licenses/CDDL-GPL-2-CP. See the License for the
+specific language governing permissions and limitations under the
+License.  When distributing the software, include this License Header
+Notice in each file and include the License file at
+nbbuild/licenses/CDDL-GPL-2-CP.  Oracle designates this
+particular file as subject to the "Classpath" exception as provided
+by Oracle in the GPL Version 2 section of the License file that
+accompanied this code. If applicable, add the following below the
+License Header, with the fields enclosed by brackets [] replaced by
+your own identifying information:
+"Portions Copyrighted [year] [name of copyright owner]"
+
+If you wish your version of this file to be governed by only the CDDL
+or only the GPL Version 2, indicate your decision by adding
+"[Contributor] elects to include this software in this distribution
+under the [CDDL or GPL Version 2] license." If you do not indicate a
+single choice of license, a recipient has the option to distribute
+your version of this file under either the CDDL, the GPL Version 2 or
+to extend the choice of license to its licensees as provided above.
+However, if you add GPL Version 2 code and therefore, elected the GPL
+Version 2 license, then the option applies only if the new code is
+made subject to such option by the copyright holder.
+
+Contributor(s):
+-->
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>chessheader.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>VPMCheckAlpha.cpp</itemPath>
+      <itemPath>VPMCheckCapture.cpp</itemPath>
+      <itemPath>VPMCheckColor.cpp</itemPath>
+      <itemPath>VPMCheckMovement.cpp</itemPath>
+      <itemPath>VPMCheckNum.cpp</itemPath>
+      <itemPath>VPMCheckPiece.cpp</itemPath>
+      <itemPath>VPMKingMoveSafe.cpp</itemPath>
+      <itemPath>VPMisBlocked.cpp</itemPath>
+      <itemPath>VPMkingNotinCheck.cpp</itemPath>
+      <itemPath>cannotMove.cpp</itemPath>
+      <itemPath>convertAtlasCoordinatesToNumeric.cpp</itemPath>
+      <itemPath>convertNumericToAtlasCoordinates.cpp</itemPath>
+      <itemPath>copyTiles.cpp</itemPath>
+      <itemPath>createMoveList.cpp</itemPath>
+      <itemPath>displayBoard.cpp</itemPath>
+      <itemPath>findSupports.cpp</itemPath>
+      <itemPath>gameEnd.cpp</itemPath>
+      <itemPath>generatePossibleMoves.cpp</itemPath>
+      <itemPath>getPlayerMoveEnd.cpp</itemPath>
+      <itemPath>getPlayerMoveStart.cpp</itemPath>
+      <itemPath>initializeBoardPieces.cpp</itemPath>
+      <itemPath>is50Moves.cpp</itemPath>
+      <itemPath>isCheck.cpp</itemPath>
+      <itemPath>isCheckmate.cpp</itemPath>
+      <itemPath>isInsufficient.cpp</itemPath>
+      <itemPath>isStalemate.cpp</itemPath>
+      <itemPath>isWhite.cpp</itemPath>
+      <itemPath>movePossible.cpp</itemPath>
+      <itemPath>outputData.cpp</itemPath>
+      <itemPath>outputInstructions.cpp</itemPath>
+      <itemPath>outputName.cpp</itemPath>
+      <itemPath>pawnPromotion.cpp</itemPath>
+      <itemPath>pawnUpdate.cpp</itemPath>
+      <itemPath>pieceSearchArrayPosition.cpp</itemPath>
+      <itemPath>printMoveList.cpp</itemPath>
+      <itemPath>readInPieceDataNames.cpp</itemPath>
+      <itemPath>updateMoveList.cpp</itemPath>
+      <itemPath>updateTiles.cpp</itemPath>
+      <itemPath>verifyPlayerMove.cpp</itemPath>
+      <itemPath>verifyPlayerMoveEnd.cpp</itemPath>
+      <itemPath>verifyPlayerMoveStart.cpp</itemPath>
+      <itemPath>welcome.cc</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="VPMCheckAlpha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckCapture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckColor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckMovement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckNum.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckPiece.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMKingMoveSafe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMisBlocked.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMkingNotinCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cannotMove.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chessheader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="convertAtlasCoordinatesToNumeric.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="convertNumericToAtlasCoordinates.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="copyTiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="createMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="displayBoard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="findSupports.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gameEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="generatePossibleMoves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="getPlayerMoveEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="getPlayerMoveStart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="initializeBoardPieces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="is50Moves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isCheckmate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isInsufficient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isStalemate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isWhite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="movePossible.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputInstructions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputName.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pawnPromotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pawnUpdate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pieceSearchArrayPosition.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="printMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="readInPieceDataNames.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="updateMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="updateTiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMove.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMoveEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMoveStart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="welcome.cc" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="VPMCheckAlpha.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckCapture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckColor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckMovement.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckNum.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMCheckPiece.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMKingMoveSafe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMisBlocked.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VPMkingNotinCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cannotMove.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="chessheader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="convertAtlasCoordinatesToNumeric.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="convertNumericToAtlasCoordinates.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="copyTiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="createMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="displayBoard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="findSupports.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gameEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="generatePossibleMoves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="getPlayerMoveEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="getPlayerMoveStart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="initializeBoardPieces.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="is50Moves.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isCheck.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isCheckmate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isInsufficient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isStalemate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="isWhite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="movePossible.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputInstructions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="outputName.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pawnPromotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pawnUpdate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pieceSearchArrayPosition.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="printMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="readInPieceDataNames.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="updateMoveList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="updateTiles.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMove.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMoveEnd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="verifyPlayerMoveStart.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="welcome.cc" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
