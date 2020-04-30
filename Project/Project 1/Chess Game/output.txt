@@ -1,6 +1,9 @@
-Total Moves: 1
+Total Moves: 7
      White     Black
- Resign  
+     e2 e4     e7 e5
+     f1 c4     a7 a6
+     d1 f3     a6 a5
+     f3 f7
 White Pieces
 P N B K Q R 
 Black Pieces
