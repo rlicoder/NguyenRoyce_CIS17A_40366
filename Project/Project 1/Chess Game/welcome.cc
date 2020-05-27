@@ -2,6 +2,7 @@
 
 int main()
 {
+    
     //declaration of all variables
     ifstream pieces;
     ifstream names;

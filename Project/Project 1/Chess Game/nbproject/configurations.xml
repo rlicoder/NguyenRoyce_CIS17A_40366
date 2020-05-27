@@ -110,6 +110,10 @@ Contributor(s):
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerCopySharedLibs>true</linkerCopySharedLibs>
+          <commandLine>-static-libgcc -static-libstdc++</commandLine>
+        </linkerTool>
       </compileType>
       <item path="VPMCheckAlpha.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -223,6 +227,10 @@ Contributor(s):
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <linkerCopySharedLibs>true</linkerCopySharedLibs>
+          <commandLine>-static-libgcc -static-libstdc++</commandLine>
+        </linkerTool>
       </compileType>
       <item path="VPMCheckAlpha.cpp" ex="false" tool="1" flavor2="0">
       </item>
