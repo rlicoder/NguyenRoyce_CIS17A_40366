@@ -10,7 +10,7 @@ bool cannotMove(piecedata piece[], int K)
     {
         for (int m = 0; m < 64; m++)
         {
-            if (piece[K].possible_moves[m] != -1)
+            if (piece[K].possible_moves[m] != "-1")
             {
                 cannotMove = false;
             }
@@ -21,7 +21,7 @@ bool cannotMove(piecedata piece[], int K)
     {
         for (int m = 0; m < 64; m++)
         {
-            if (piece[K].possible_moves[m] != -1)
+            if (piece[K].possible_moves[m] != "-1")
             {
                 cannotMove = false;
             }
@@ -35,7 +35,7 @@ bool cannotMove(piecedata piece[], int K)
         {
             for (int m = 0; m < 64; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     cannotMove = false;
                 }
@@ -45,7 +45,7 @@ bool cannotMove(piecedata piece[], int K)
         {
             for (int m = 0; m < 64; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     cannotMove = false;
                 }
@@ -60,7 +60,7 @@ bool cannotMove(piecedata piece[], int K)
         {
             for (int m = 0; m < 64; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     cannotMove = false;
                 }

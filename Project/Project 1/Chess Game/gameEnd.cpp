@@ -5,7 +5,7 @@ bool gameEnd(bool resignation, bool whiteturn, bool offerdraw, piecedata piece[]
     //set flag and checkpoints
     bool gameEnd = false;
     bool endConditions[6] = {0,0,0,0,0};
-    
+    generatePossibleMoves(piece, board, blackPieces, whitePieces, alphaCoordinates, whiteturn);
     //declare and initialize checkpoints
     endConditions[0] = isCheckmate(board, piece, blackPieces, whitePieces, alphaCoordinates, whiteturn);
     endConditions[1] = isStalemate(piece, whiteturn);

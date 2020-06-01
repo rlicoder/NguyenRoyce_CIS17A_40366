@@ -64,28 +64,28 @@ void updateTiles(tiles board[8][8], char blackPieces[], char whitePieces[], stri
         piece[pos2].moves++;
              
         //castling
-        if (pos2 == 12 && endmovecol == 6)
+        if (pos2 == 12 && endmovecol == 6 && piece[pos2].moves == 0)
         {
             piece[15].position[1] = 5;
             piece[15].moves++;
             board[0][5].symbol = board[0][7].symbol;
             board[0][7].symbol = ' ';
         }
-        else if (pos2 == 12 && endmovecol == 2)
+        else if (pos2 == 12 && endmovecol == 2 && piece[pos2].moves == 0)
         {
             piece[8].position[1] = 3;
             piece[8].moves++;
             board[0][3].symbol = board[0][0].symbol;
             board[0][0].symbol = ' ';
         }
-        else if (pos2 == 4 && endmovecol == 2)
+        else if (pos2 == 4 && endmovecol == 2 && piece[pos2].moves == 0)
         {
             piece[0].position[1] = 3;
             piece[0].moves++;
             board[7][3].symbol = board[7][0].symbol;
             board[7][0].symbol = ' ';
         }
-        else if (pos2 == 4 && endmovecol == 6)
+        else if (pos2 == 4 && endmovecol == 6 && piece[pos2].moves == 0)
         {
             piece[7].position[1] = 5;
             piece[7].moves++;
@@ -133,5 +133,5 @@ void updateTiles(tiles board[8][8], char blackPieces[], char whitePieces[], stri
     }
     
     //finding pieces that are supported by their own
-    findSupports(piece, board);
+    findSupports(piece, board); 
 }

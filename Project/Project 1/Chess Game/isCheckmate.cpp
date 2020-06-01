@@ -28,7 +28,7 @@ bool isCheckmate(tiles board[8][8], piecedata piece[], char blackPieces[], char 
     }
     
     //simulation
-    generatePossibleMoves(piece, board, blackPieces, whitePieces, alphaCoordinates, whiteturn);
+    
     
     //checking if there are no moves for black to get out of check
     checkmateConditions[1] = cannotMove(piece, i);

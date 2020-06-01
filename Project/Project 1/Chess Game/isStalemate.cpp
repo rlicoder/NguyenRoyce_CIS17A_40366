@@ -13,7 +13,7 @@ bool isStalemate(piecedata piece[], bool whiteturn)
         {
             for (int m = 0; m < 64 && !flag; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     flag = true;
                 }
@@ -23,7 +23,7 @@ bool isStalemate(piecedata piece[], bool whiteturn)
         {
             for (int m = 0; m < 64 && !flag; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     flag = true;
                 }
@@ -41,7 +41,7 @@ bool isStalemate(piecedata piece[], bool whiteturn)
         {
             for (int m = 0; m < 64 && !flag; m++)
             {
-                if (piece[i].possible_moves[m] != -1)
+                if (piece[i].possible_moves[m] != "-1")
                 {
                     flag = true;
                 }

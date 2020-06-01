@@ -24,7 +24,7 @@ void generatePossibleMoves(piecedata piece[], tiles board[8][8], char blackPiece
         {
             for (int j = 0; j < 64; j++)
             {
-                piece[i].possible_moves[j] = -1;
+                piece[i].possible_moves[j] = "-1";
             }
         }
         

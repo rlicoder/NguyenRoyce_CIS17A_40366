@@ -17,8 +17,8 @@ struct piecedata
     int moves;
     int position[2];
     int new_i;
-    int possible_moves[64];
-    int counter;
+    string possible_moves[64];
+    int couner;
     bools conditions; 
 };
 
@@ -95,7 +95,7 @@ void pawnUpdate(piecedata piece[], char blackPieces[], char whitePieces[], tiles
 void pawnPromotion(piecedata piece[], char blackPieces[], char whitePieces[], tiles board[8][8], bool isWhite, int i);
 
 //simulation
-int movePossible(int i, int k, tiles board[8][8], piecedata piece[], char blackPieces[], char whitePieces[], char alphaCoordinates[], int c, bool whiteturn);
+string movePossible(int i, int k, tiles board[8][8], piecedata piece[], char blackPieces[], char whitePieces[], char alphaCoordinates[], int c, bool whiteturn);
 void generatePossibleMoves(piecedata piece[], tiles board[8][8], char blackPieces[], char whitePieces[], char alphaCoordinates[], bool whiteturn);
 void findSupports(piecedata piece[], tiles board[8][8]);
 tiles copyTiles(tiles board[8][8], int i, int j);

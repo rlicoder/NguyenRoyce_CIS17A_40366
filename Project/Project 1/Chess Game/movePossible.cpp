@@ -1,6 +1,6 @@
 #include "chessheader.h"
 
-int movePossible(int a, int b, tiles board[8][8], piecedata piece[], char blackPieces[], char whitePieces[], char alphaCoordinates[], int c, bool whiteturn)
+string movePossible(int a, int b, tiles board[8][8], piecedata piece[], char blackPieces[], char whitePieces[], char alphaCoordinates[], int c, bool whiteturn)
 {
     //assigning integer values of the movements
     string playermove[4];
@@ -16,10 +16,10 @@ int movePossible(int a, int b, tiles board[8][8], piecedata piece[], char blackP
     //returning the result to the array element
     if (!result)
     {
-        return -1;
+        return "-1";
     }
     if (result)
     {
-        return stoi(playermove[3]);
+        return playermove[3];
     }
 }
