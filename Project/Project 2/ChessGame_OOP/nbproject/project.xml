@@ -45,8 +45,8 @@ Contributor(s):
             <name>ChessGame_OOP</name>
             <make-project-type>0</make-project-type>
             <c-extensions/>
-            <cpp-extensions/>
-            <header-extensions>cpp,h</header-extensions>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>

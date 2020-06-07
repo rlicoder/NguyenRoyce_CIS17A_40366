@@ -18,7 +18,7 @@ struct piecedata
     int position[2];
     int new_i;
     string possible_moves[64];
-    int couner;
+    int counter;
     bools conditions; 
 };
 

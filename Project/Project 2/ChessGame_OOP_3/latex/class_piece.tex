@@ -1,0 +1,390 @@
+\hypertarget{class_piece}{}\doxysection{Piece Class Reference}
+\label{class_piece}\index{Piece@{Piece}}
+
+
+{\ttfamily \#include $<$Piece.\+h$>$}
+
+Inheritance diagram for Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_piece}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_piece_a73122d62562e4cd1badbe21745980876}{get\+Piece\+Value}} ()
+\item 
+int \mbox{\hyperlink{class_piece_acf6a8f9acecacd9f53015576dfc505bc}{get\+Moves}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a33d7d4f7ac094c4b586107484c0c2567}{set\+Moves}} (int dummy)
+\item 
+bool \mbox{\hyperlink{class_piece_ae49d01cf5974811b2d2a414be39873b4}{get\+White}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a3796fbdbb9a8d77fc257f68807f5df38}{set\+White}} (bool dummy)
+\item 
+bool \mbox{\hyperlink{class_piece_a6a548ef5f194c86ac06e0e454e4546a5}{get\+Captured}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a9a81fb2aeee856d9102478e17fa27869}{set\+Captured}} (bool dummy)
+\item 
+string \mbox{\hyperlink{class_piece_afe8b4a70fe34e053596c708247ccaa6f}{get\+Possible\+\_\+\+Moves}} (int val)
+\item 
+void \mbox{\hyperlink{class_piece_a05d3ac86ac4d3d292b96a9a3d80fced5}{set\+Possible\+\_\+\+Moves}} (string dummy, int val)
+\item 
+int \mbox{\hyperlink{class_piece_a7b97a506cb126907f4019143818911a8}{get\+Position}} (int val)
+\item 
+void \mbox{\hyperlink{class_piece_ac0bb4dad49e768d85fab3c753322559b}{set\+Position}} (int val, int dummy)
+\item 
+bool \mbox{\hyperlink{class_piece_adbb4344f65ca401c666f99bfcfa5ad77}{get\+Is\+Supported}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a276750424eda24eb44af71ad2b0a7ebe}{set\+Is\+Supported}} (bool dummy)
+\item 
+bool \mbox{\hyperlink{class_piece_a19e8494d1d6129bfaec6f7833d84f165}{get\+In\+Check}} ()
+\item 
+void \mbox{\hyperlink{class_piece_a439836413bcd6fe5d5ddf647e10baa79}{set\+In\+Check}} (bool dummy)
+\item 
+void \mbox{\hyperlink{class_piece_a5ff1339aeeeb565ba5076df4e7eb9b56}{add\+Moves}} (int dummy)
+\item 
+virtual bool \mbox{\hyperlink{class_piece_a383653f651b41cb4288710ea2a4d0843}{check\+Movement}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\item 
+virtual bool \mbox{\hyperlink{class_piece_aefbddd573a4193416cadaaf2ae828855}{check\+Block}} (int startmoverow, int startmovecol, int endmoverow, int endmovecol, \mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_piece_a64d697d16189ee227a3a8a48f358a7fd}{moves}}
+\item 
+bool \mbox{\hyperlink{class_piece_a5c5b2d163f454810b70458da779af435}{white}}
+\item 
+bool \mbox{\hyperlink{class_piece_a0e0d95eafffbb594ae2fd69ca80456c7}{captured}}
+\item 
+string \mbox{\hyperlink{class_piece_a9624b43d7cb26ccd5de1556280e946c0}{possible\+\_\+moves}} \mbox{[}64\mbox{]}
+\item 
+int \mbox{\hyperlink{class_piece_a7fb3aa311bc48426663f4c4821908ebb}{position}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{class_piece_ad7cc613e3ddf4933839cead0b3326033}{piecevalue}}
+\item 
+bool \mbox{\hyperlink{class_piece_a4a62693768ce85ddbac03d7db1855849}{issupported}}
+\item 
+bool \mbox{\hyperlink{class_piece_ab4521dc89f95a31c692394ba3645f5b0}{incheck}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_piece_a160b20740d3ee9d50350c99cfd53726c}{totalmoves}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_piece_a2e14561da45711b29301718cac7b328b}{tiles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Piece.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_piece_a5ff1339aeeeb565ba5076df4e7eb9b56}\label{class_piece_a5ff1339aeeeb565ba5076df4e7eb9b56}} 
+\index{Piece@{Piece}!addMoves@{addMoves}}
+\index{addMoves@{addMoves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{addMoves()}{addMoves()}}
+{\footnotesize\ttfamily void Piece\+::add\+Moves (\begin{DoxyParamCaption}\item[{int}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_aefbddd573a4193416cadaaf2ae828855}\label{class_piece_aefbddd573a4193416cadaaf2ae828855}} 
+\index{Piece@{Piece}!checkBlock@{checkBlock}}
+\index{checkBlock@{checkBlock}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{checkBlock()}{checkBlock()}}
+{\footnotesize\ttfamily virtual bool Piece\+::check\+Block (\begin{DoxyParamCaption}\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_bishop_a1597520594e9371c746f86e1033f8e31}{Bishop}}, \mbox{\hyperlink{class_queen_ae678b3ffe12c5de887e4e2448792df81}{Queen}}, and \mbox{\hyperlink{class_rook_a417a9ce990aa81c4abfd89308bb89058}{Rook}}.
+
+
+
+Definition at line 61 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a383653f651b41cb4288710ea2a4d0843}\label{class_piece_a383653f651b41cb4288710ea2a4d0843}} 
+\index{Piece@{Piece}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily virtual bool Piece\+::check\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_pawn_aaf1896603f4b0f604268d38a047ceac8}{Pawn}}, \mbox{\hyperlink{class_bishop_ae335938df0aa4851ebca2449f4cf84e6}{Bishop}}, \mbox{\hyperlink{class_king_a03a79b32bbacd09a1cc62b864d185338}{King}}, \mbox{\hyperlink{class_knight_abc5221d5ea08dde62e81004110848e6a}{Knight}}, \mbox{\hyperlink{class_queen_a045b3e948596f786cc5ca089dff7252a}{Queen}}, and \mbox{\hyperlink{class_rook_a63f551c28017c5cc2754f3332f6bde40}{Rook}}.
+
+
+
+Definition at line 58 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a6a548ef5f194c86ac06e0e454e4546a5}\label{class_piece_a6a548ef5f194c86ac06e0e454e4546a5}} 
+\index{Piece@{Piece}!getCaptured@{getCaptured}}
+\index{getCaptured@{getCaptured}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getCaptured()}{getCaptured()}}
+{\footnotesize\ttfamily bool Piece\+::get\+Captured (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a19e8494d1d6129bfaec6f7833d84f165}\label{class_piece_a19e8494d1d6129bfaec6f7833d84f165}} 
+\index{Piece@{Piece}!getInCheck@{getInCheck}}
+\index{getInCheck@{getInCheck}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getInCheck()}{getInCheck()}}
+{\footnotesize\ttfamily bool Piece\+::get\+In\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_adbb4344f65ca401c666f99bfcfa5ad77}\label{class_piece_adbb4344f65ca401c666f99bfcfa5ad77}} 
+\index{Piece@{Piece}!getIsSupported@{getIsSupported}}
+\index{getIsSupported@{getIsSupported}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getIsSupported()}{getIsSupported()}}
+{\footnotesize\ttfamily bool Piece\+::get\+Is\+Supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_acf6a8f9acecacd9f53015576dfc505bc}\label{class_piece_acf6a8f9acecacd9f53015576dfc505bc}} 
+\index{Piece@{Piece}!getMoves@{getMoves}}
+\index{getMoves@{getMoves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getMoves()}{getMoves()}}
+{\footnotesize\ttfamily int Piece\+::get\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 28 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a73122d62562e4cd1badbe21745980876}\label{class_piece_a73122d62562e4cd1badbe21745980876}} 
+\index{Piece@{Piece}!getPieceValue@{getPieceValue}}
+\index{getPieceValue@{getPieceValue}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getPieceValue()}{getPieceValue()}}
+{\footnotesize\ttfamily int Piece\+::get\+Piece\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a7b97a506cb126907f4019143818911a8}\label{class_piece_a7b97a506cb126907f4019143818911a8}} 
+\index{Piece@{Piece}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Piece\+::get\+Position (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_afe8b4a70fe34e053596c708247ccaa6f}\label{class_piece_afe8b4a70fe34e053596c708247ccaa6f}} 
+\index{Piece@{Piece}!getPossible\_Moves@{getPossible\_Moves}}
+\index{getPossible\_Moves@{getPossible\_Moves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getPossible\_Moves()}{getPossible\_Moves()}}
+{\footnotesize\ttfamily string Piece\+::get\+Possible\+\_\+\+Moves (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_ae49d01cf5974811b2d2a414be39873b4}\label{class_piece_ae49d01cf5974811b2d2a414be39873b4}} 
+\index{Piece@{Piece}!getWhite@{getWhite}}
+\index{getWhite@{getWhite}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{getWhite()}{getWhite()}}
+{\footnotesize\ttfamily bool Piece\+::get\+White (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a9a81fb2aeee856d9102478e17fa27869}\label{class_piece_a9a81fb2aeee856d9102478e17fa27869}} 
+\index{Piece@{Piece}!setCaptured@{setCaptured}}
+\index{setCaptured@{setCaptured}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setCaptured()}{setCaptured()}}
+{\footnotesize\ttfamily void Piece\+::set\+Captured (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a439836413bcd6fe5d5ddf647e10baa79}\label{class_piece_a439836413bcd6fe5d5ddf647e10baa79}} 
+\index{Piece@{Piece}!setInCheck@{setInCheck}}
+\index{setInCheck@{setInCheck}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setInCheck()}{setInCheck()}}
+{\footnotesize\ttfamily void Piece\+::set\+In\+Check (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a276750424eda24eb44af71ad2b0a7ebe}\label{class_piece_a276750424eda24eb44af71ad2b0a7ebe}} 
+\index{Piece@{Piece}!setIsSupported@{setIsSupported}}
+\index{setIsSupported@{setIsSupported}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setIsSupported()}{setIsSupported()}}
+{\footnotesize\ttfamily void Piece\+::set\+Is\+Supported (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a33d7d4f7ac094c4b586107484c0c2567}\label{class_piece_a33d7d4f7ac094c4b586107484c0c2567}} 
+\index{Piece@{Piece}!setMoves@{setMoves}}
+\index{setMoves@{setMoves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setMoves()}{setMoves()}}
+{\footnotesize\ttfamily void Piece\+::set\+Moves (\begin{DoxyParamCaption}\item[{int}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_ac0bb4dad49e768d85fab3c753322559b}\label{class_piece_ac0bb4dad49e768d85fab3c753322559b}} 
+\index{Piece@{Piece}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Piece\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{int}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a05d3ac86ac4d3d292b96a9a3d80fced5}\label{class_piece_a05d3ac86ac4d3d292b96a9a3d80fced5}} 
+\index{Piece@{Piece}!setPossible\_Moves@{setPossible\_Moves}}
+\index{setPossible\_Moves@{setPossible\_Moves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setPossible\_Moves()}{setPossible\_Moves()}}
+{\footnotesize\ttfamily void Piece\+::set\+Possible\+\_\+\+Moves (\begin{DoxyParamCaption}\item[{string}]{dummy,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file Piece.\+cpp.
+
+\mbox{\Hypertarget{class_piece_a3796fbdbb9a8d77fc257f68807f5df38}\label{class_piece_a3796fbdbb9a8d77fc257f68807f5df38}} 
+\index{Piece@{Piece}!setWhite@{setWhite}}
+\index{setWhite@{setWhite}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{setWhite()}{setWhite()}}
+{\footnotesize\ttfamily void Piece\+::set\+White (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Piece.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_piece_a2e14561da45711b29301718cac7b328b}\label{class_piece_a2e14561da45711b29301718cac7b328b}} 
+\index{Piece@{Piece}!tiles@{tiles}}
+\index{tiles@{tiles}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classtiles}{tiles}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 12 of file Piece.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_piece_a0e0d95eafffbb594ae2fd69ca80456c7}\label{class_piece_a0e0d95eafffbb594ae2fd69ca80456c7}} 
+\index{Piece@{Piece}!captured@{captured}}
+\index{captured@{captured}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{captured}{captured}}
+{\footnotesize\ttfamily bool Piece\+::captured\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 18 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_ab4521dc89f95a31c692394ba3645f5b0}\label{class_piece_ab4521dc89f95a31c692394ba3645f5b0}} 
+\index{Piece@{Piece}!incheck@{incheck}}
+\index{incheck@{incheck}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{incheck}{incheck}}
+{\footnotesize\ttfamily bool Piece\+::incheck\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 23 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a4a62693768ce85ddbac03d7db1855849}\label{class_piece_a4a62693768ce85ddbac03d7db1855849}} 
+\index{Piece@{Piece}!issupported@{issupported}}
+\index{issupported@{issupported}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{issupported}{issupported}}
+{\footnotesize\ttfamily bool Piece\+::issupported\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a64d697d16189ee227a3a8a48f358a7fd}\label{class_piece_a64d697d16189ee227a3a8a48f358a7fd}} 
+\index{Piece@{Piece}!moves@{moves}}
+\index{moves@{moves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{moves}{moves}}
+{\footnotesize\ttfamily int Piece\+::moves\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 16 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_ad7cc613e3ddf4933839cead0b3326033}\label{class_piece_ad7cc613e3ddf4933839cead0b3326033}} 
+\index{Piece@{Piece}!piecevalue@{piecevalue}}
+\index{piecevalue@{piecevalue}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{piecevalue}{piecevalue}}
+{\footnotesize\ttfamily int Piece\+::piecevalue\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 21 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a7fb3aa311bc48426663f4c4821908ebb}\label{class_piece_a7fb3aa311bc48426663f4c4821908ebb}} 
+\index{Piece@{Piece}!position@{position}}
+\index{position@{position}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily int Piece\+::position\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 20 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a9624b43d7cb26ccd5de1556280e946c0}\label{class_piece_a9624b43d7cb26ccd5de1556280e946c0}} 
+\index{Piece@{Piece}!possible\_moves@{possible\_moves}}
+\index{possible\_moves@{possible\_moves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{possible\_moves}{possible\_moves}}
+{\footnotesize\ttfamily string Piece\+::possible\+\_\+moves\mbox{[}64\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 19 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a160b20740d3ee9d50350c99cfd53726c}\label{class_piece_a160b20740d3ee9d50350c99cfd53726c}} 
+\index{Piece@{Piece}!totalmoves@{totalmoves}}
+\index{totalmoves@{totalmoves}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{totalmoves}{totalmoves}}
+{\footnotesize\ttfamily int Piece\+::totalmoves\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 15 of file Piece.\+h.
+
+\mbox{\Hypertarget{class_piece_a5c5b2d163f454810b70458da779af435}\label{class_piece_a5c5b2d163f454810b70458da779af435}} 
+\index{Piece@{Piece}!white@{white}}
+\index{white@{white}!Piece@{Piece}}
+\doxysubsubsection{\texorpdfstring{white}{white}}
+{\footnotesize\ttfamily bool Piece\+::white\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17 of file Piece.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_piece_8h}{Piece.\+h}}\item 
+\mbox{\hyperlink{_piece_8cpp}{Piece.\+cpp}}\end{DoxyCompactItemize}

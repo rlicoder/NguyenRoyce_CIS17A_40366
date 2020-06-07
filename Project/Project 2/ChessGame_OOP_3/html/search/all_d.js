@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['setcaptured_93',['setCaptured',['../class_piece.html#a9a81fb2aeee856d9102478e17fa27869',1,'Piece']]],
+  ['setgamestate_94',['setGameState',['../class_game.html#a6f738910eb27883911251cfd786c2ed3',1,'Game']]],
+  ['setincheck_95',['setInCheck',['../class_piece.html#a439836413bcd6fe5d5ddf647e10baa79',1,'Piece']]],
+  ['setispawn_96',['setIsPawn',['../class_pawn.html#a305a194b00fd18f79529edb0e03ab2eb',1,'Pawn']]],
+  ['setissupported_97',['setIsSupported',['../class_piece.html#a276750424eda24eb44af71ad2b0a7ebe',1,'Piece']]],
+  ['setmove_98',['setMove',['../class_computer.html#a67d27d30d1e1db3f63cffea84b107bd2',1,'Computer']]],
+  ['setmoves_99',['setMoves',['../class_piece.html#a33d7d4f7ac094c4b586107484c0c2567',1,'Piece']]],
+  ['setoccupied_100',['setOccupied',['../classtiles.html#ac6397e2c1ae71630c0ba8e3be53edda1',1,'tiles']]],
+  ['setoccupiedblack_101',['setOccupiedBlack',['../classtiles.html#a33d2ab9eac52e60b98bfedfe73435aac',1,'tiles']]],
+  ['setoccupiedwhite_102',['setOccupiedWhite',['../classtiles.html#a636881b185eccfa562de041384102bd8',1,'tiles']]],
+  ['setplayermove_103',['setPlayerMove',['../class_player.html#add45e47e57f8d2e8747b0598067fa76d',1,'Player']]],
+  ['setposition_104',['setPosition',['../class_piece.html#ac0bb4dad49e768d85fab3c753322559b',1,'Piece']]],
+  ['setpossible_5fmoves_105',['setPossible_Moves',['../class_piece.html#a05d3ac86ac4d3d292b96a9a3d80fced5',1,'Piece']]],
+  ['setsymbol_106',['setSymbol',['../classtiles.html#ab7da2dabf4e240902efd9be732e95035',1,'tiles']]],
+  ['setunderattackblack_107',['setUnderAttackBlack',['../classtiles.html#a1d6011a494e1319783fcfb36aa2884a4',1,'tiles']]],
+  ['setunderattackwhite_108',['setUnderAttackWhite',['../classtiles.html#a9b62acfb2e4903ac41856eb97c81a769',1,'tiles']]],
+  ['setwhite_109',['setWhite',['../class_piece.html#a3796fbdbb9a8d77fc257f68807f5df38',1,'Piece']]]
+];

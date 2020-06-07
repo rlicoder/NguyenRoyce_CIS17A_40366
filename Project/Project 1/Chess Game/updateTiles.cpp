@@ -58,10 +58,7 @@ void updateTiles(tiles board[8][8], char blackPieces[], char whitePieces[], stri
             board[startmoverow][startmovecol-1].symbol = ' ';
         }
         
-        //updating data
-        piece[pos2].position[0] = endmoverow;
-        piece[pos2].position[1] = endmovecol;
-        piece[pos2].moves++;
+        
              
         //castling
         if (pos2 == 12 && endmovecol == 6 && piece[pos2].moves == 0)
@@ -92,6 +89,11 @@ void updateTiles(tiles board[8][8], char blackPieces[], char whitePieces[], stri
             board[7][5].symbol = board[7][7].symbol;
             board[7][7].symbol = ' ';
         }
+        
+        //updating data
+        piece[pos2].position[0] = endmoverow;
+        piece[pos2].position[1] = endmovecol;
+        piece[pos2].moves++;
         
         //updating board
         board[endmoverow][endmovecol].symbol = board[startmoverow][startmovecol].symbol;

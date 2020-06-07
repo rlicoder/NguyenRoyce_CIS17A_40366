@@ -1,0 +1,494 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+bool \mbox{\hyperlink{class_game_a2d1ed72c903868c72d04d8177dc7a264}{get\+Game\+State}} ()
+\item 
+void \mbox{\hyperlink{class_game_a6f738910eb27883911251cfd786c2ed3}{set\+Game\+State}} (bool dummy)
+\item 
+bool \mbox{\hyperlink{class_game_aaa267ac4e04700ae9a4e937bb619a329}{get\+White\+Turn}} ()
+\item 
+void \mbox{\hyperlink{class_game_a113b259eb98d67fd0921ffb3d82b4317}{flip\+White\+Turn}} ()
+\item 
+void \mbox{\hyperlink{class_game_a63c52c475debbced9961d7fd1e02366e}{display\+Board}} ()
+\item 
+\mbox{\hyperlink{classtiles}{tiles}} \mbox{\hyperlink{class_game_ae5d4304438c4089bdcb43ac06dc529fd}{get\+Board}} (int i, int j)
+\item 
+char \mbox{\hyperlink{class_game_a2e43e978921bfb332c0c0a95147af0e7}{get\+White\+Pieces}} (int val)
+\item 
+char \mbox{\hyperlink{class_game_a1a7e0a44789de330933c850de5665523}{get\+Black\+Pieces}} (int val)
+\item 
+char \mbox{\hyperlink{class_game_acade08e22dab90f4df119a59534ea9e1}{get\+Alpha\+Coordinates}} (int val)
+\item 
+void \mbox{\hyperlink{class_game_a50771a6de2d7ed13fd495fe39478afb1}{initialize\+Board\+Pieces}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+void \mbox{\hyperlink{class_game_afb208816a3ccd6e1bce9dbb26f449fed}{update\+Tiles}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, string playermove\mbox{[}$\,$\mbox{]}, bool whiteturn, bool simulation)
+\item 
+void \mbox{\hyperlink{class_game_a8edd83d5e57182bcb88e9ca3c434a8b7}{update\+Tiles}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, \mbox{\hyperlink{class_player}{Player}} player, bool whiteturn, bool simulation)
+\item 
+void \mbox{\hyperlink{class_game_a7606188750ba187f97cbe29726947deb}{update\+Tiles}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+bool \mbox{\hyperlink{class_game_a0e205eebc58203432647e35cfbf3a802}{is\+Check}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, int endmoverow, int endmovecol, bool white, bool hypo)
+\item 
+bool \mbox{\hyperlink{class_game_aadb0899af4e8f52969b3ccbf02c4f619}{is\+White}} (int row, int col)
+\item 
+void \mbox{\hyperlink{class_game_a6ebe9a6b798f1d809fe873c9e9cad48e}{verify\+Player\+Move\+Start}} (string playermove)
+\item 
+bool \mbox{\hyperlink{class_game_a26e5a1f21e721719ebb8cfe0a7107953}{check\+Piece\+Color}} (string playermove)
+\item 
+void \mbox{\hyperlink{class_game_a94998472eb5ea52ccba822e8d22dd2da}{verify\+Player\+Move\+End}} (string playermove)
+\item 
+bool \mbox{\hyperlink{class_game_ad8869a9274bdee16d460c030c2d6bfa5}{verify\+Player\+Move}} (\mbox{\hyperlink{class_game}{Game}} game, string playermove\mbox{[}$\,$\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool whiteturn, bool hypo, bool simulation, bool realtimewhiteturn)
+\item 
+string \mbox{\hyperlink{class_game_adbf7335ea5c42d5d332a9f43386eaa06}{convert\+Atlas\+Coordinates\+To\+Numeric}} (string playermove)
+\item 
+bool \mbox{\hyperlink{class_game_a377a24103d91a1ae14282b9754348579}{check\+Capture}} (bool whiteturn, string playermove\mbox{[}$\,$\mbox{]}, bool simulation, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool realtimewhiteturn)
+\item 
+bool \mbox{\hyperlink{class_game_ad62c82a93ec0f99193cbb85fcc62ce21}{get\+Board\+Occupied}} (int i, int j)
+\item 
+bool \mbox{\hyperlink{class_game_aef2995e00ec977c1cf26806fd22fca12}{check\+Movement}} (int pos, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\item 
+bool \mbox{\hyperlink{class_game_a66d9fdfd21bbb24b643831f861cce25e}{king\+Notincheck}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, string playermove\mbox{[}$\,$\mbox{]}, bool whiteturn, bool hypo, bool simulation)
+\item 
+void \mbox{\hyperlink{class_game_aa03c304d03dc36cc6c6c168a5a1646c3}{find\+Supports}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+bool \mbox{\hyperlink{class_game_a2ece38726327472efedd235a5d48f9fa}{King\+Move\+Safe}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, int endmoverow, int endmovecol, bool whiteturn)
+\item 
+bool \mbox{\hyperlink{class_game_aac18397b9755371823fabd5a4328948e}{is\+Check}} (\mbox{\hyperlink{classtiles}{tiles}} copyboard\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, int endmoverow, int endmovecol, bool white, bool hypo)
+\item 
+void \mbox{\hyperlink{class_game_a218ac3ab975f5bf38fcd73b9fcec8e2a}{update\+Game\+State}} ()
+\item 
+void \mbox{\hyperlink{class_game_a976badeab2b6293b34034a9f191e5e48}{generate\+Possible\+Moves}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool whiteturn)
+\item 
+string \mbox{\hyperlink{class_game_aaee257b88aff828c0fea7ebb17673d7d}{move\+Possible}} (int a, int b, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, int c, bool whiteturn)
+\item 
+string \mbox{\hyperlink{class_game_ad38b9045176dc333873b2da64caef413}{convert\+Numeric\+To\+Atlas\+Coordinates}} (int row, int col)
+\item 
+bool \mbox{\hyperlink{class_game_a1c27da8c9181f261d498130d11c4200a}{is\+Checkmate}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool whiteturn)
+\item 
+bool \mbox{\hyperlink{class_game_ab1b2dab1a15b591ec9dbf0e9fcbc4fc6}{is\+Stalemate}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool whiteturn)
+\item 
+bool \mbox{\hyperlink{class_game_a008bd2ec01e2ed06bfc7a75397656509}{is\+Insufficient}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+bool \mbox{\hyperlink{class_game_a2c5fd67716eef88bff14fab26666ae0a}{cannot\+Move}} (vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, int K)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game_a2e14561da45711b29301718cac7b328b}{tiles}}
+\item 
+class \mbox{\hyperlink{class_game_ae6fa0350c8ef33e791f1f9a4daa5e3d1}{Piece}}
+\item 
+class \mbox{\hyperlink{class_game_a7f4241aa9ecc051c75f779af132a52ed}{Player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Game.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file Game.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a2c5fd67716eef88bff14fab26666ae0a}\label{class_game_a2c5fd67716eef88bff14fab26666ae0a}} 
+\index{Game@{Game}!cannotMove@{cannotMove}}
+\index{cannotMove@{cannotMove}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{cannotMove()}{cannotMove()}}
+{\footnotesize\ttfamily bool Game\+::cannot\+Move (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{int}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1233 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a377a24103d91a1ae14282b9754348579}\label{class_game_a377a24103d91a1ae14282b9754348579}} 
+\index{Game@{Game}!checkCapture@{checkCapture}}
+\index{checkCapture@{checkCapture}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{checkCapture()}{checkCapture()}}
+{\footnotesize\ttfamily bool Game\+::check\+Capture (\begin{DoxyParamCaption}\item[{bool}]{whiteturn,  }\item[{string}]{playermove\mbox{[}$\,$\mbox{]},  }\item[{bool}]{simulation,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{realtimewhiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 409 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aef2995e00ec977c1cf26806fd22fca12}\label{class_game_aef2995e00ec977c1cf26806fd22fca12}} 
+\index{Game@{Game}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily bool Game\+::check\+Movement (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a26e5a1f21e721719ebb8cfe0a7107953}\label{class_game_a26e5a1f21e721719ebb8cfe0a7107953}} 
+\index{Game@{Game}!checkPieceColor@{checkPieceColor}}
+\index{checkPieceColor@{checkPieceColor}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{checkPieceColor()}{checkPieceColor()}}
+{\footnotesize\ttfamily bool Game\+::check\+Piece\+Color (\begin{DoxyParamCaption}\item[{string}]{playermove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 332 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_adbf7335ea5c42d5d332a9f43386eaa06}\label{class_game_adbf7335ea5c42d5d332a9f43386eaa06}} 
+\index{Game@{Game}!convertAtlasCoordinatesToNumeric@{convertAtlasCoordinatesToNumeric}}
+\index{convertAtlasCoordinatesToNumeric@{convertAtlasCoordinatesToNumeric}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{convertAtlasCoordinatesToNumeric()}{convertAtlasCoordinatesToNumeric()}}
+{\footnotesize\ttfamily string Game\+::convert\+Atlas\+Coordinates\+To\+Numeric (\begin{DoxyParamCaption}\item[{string}]{playermove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 364 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ad38b9045176dc333873b2da64caef413}\label{class_game_ad38b9045176dc333873b2da64caef413}} 
+\index{Game@{Game}!convertNumericToAtlasCoordinates@{convertNumericToAtlasCoordinates}}
+\index{convertNumericToAtlasCoordinates@{convertNumericToAtlasCoordinates}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{convertNumericToAtlasCoordinates()}{convertNumericToAtlasCoordinates()}}
+{\footnotesize\ttfamily string Game\+::convert\+Numeric\+To\+Atlas\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Definition at line 925 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a63c52c475debbced9961d7fd1e02366e}\label{class_game_a63c52c475debbced9961d7fd1e02366e}} 
+\index{Game@{Game}!displayBoard@{displayBoard}}
+\index{displayBoard@{displayBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{displayBoard()}{displayBoard()}}
+{\footnotesize\ttfamily void Game\+::display\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aa03c304d03dc36cc6c6c168a5a1646c3}\label{class_game_aa03c304d03dc36cc6c6c168a5a1646c3}} 
+\index{Game@{Game}!findSupports@{findSupports}}
+\index{findSupports@{findSupports}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{findSupports()}{findSupports()}}
+{\footnotesize\ttfamily void Game\+::find\+Supports (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 520 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a113b259eb98d67fd0921ffb3d82b4317}\label{class_game_a113b259eb98d67fd0921ffb3d82b4317}} 
+\index{Game@{Game}!flipWhiteTurn@{flipWhiteTurn}}
+\index{flipWhiteTurn@{flipWhiteTurn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{flipWhiteTurn()}{flipWhiteTurn()}}
+{\footnotesize\ttfamily void Game\+::flip\+White\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a976badeab2b6293b34034a9f191e5e48}\label{class_game_a976badeab2b6293b34034a9f191e5e48}} 
+\index{Game@{Game}!generatePossibleMoves@{generatePossibleMoves}}
+\index{generatePossibleMoves@{generatePossibleMoves}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{generatePossibleMoves()}{generatePossibleMoves()}}
+{\footnotesize\ttfamily void Game\+::generate\+Possible\+Moves (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{whiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 870 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_acade08e22dab90f4df119a59534ea9e1}\label{class_game_acade08e22dab90f4df119a59534ea9e1}} 
+\index{Game@{Game}!getAlphaCoordinates@{getAlphaCoordinates}}
+\index{getAlphaCoordinates@{getAlphaCoordinates}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getAlphaCoordinates()}{getAlphaCoordinates()}}
+{\footnotesize\ttfamily char Game\+::get\+Alpha\+Coordinates (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a1a7e0a44789de330933c850de5665523}\label{class_game_a1a7e0a44789de330933c850de5665523}} 
+\index{Game@{Game}!getBlackPieces@{getBlackPieces}}
+\index{getBlackPieces@{getBlackPieces}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBlackPieces()}{getBlackPieces()}}
+{\footnotesize\ttfamily char Game\+::get\+Black\+Pieces (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_ae5d4304438c4089bdcb43ac06dc529fd}\label{class_game_ae5d4304438c4089bdcb43ac06dc529fd}} 
+\index{Game@{Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtiles}{tiles}} Game\+::get\+Board (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_ad62c82a93ec0f99193cbb85fcc62ce21}\label{class_game_ad62c82a93ec0f99193cbb85fcc62ce21}} 
+\index{Game@{Game}!getBoardOccupied@{getBoardOccupied}}
+\index{getBoardOccupied@{getBoardOccupied}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBoardOccupied()}{getBoardOccupied()}}
+{\footnotesize\ttfamily bool Game\+::get\+Board\+Occupied (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a2d1ed72c903868c72d04d8177dc7a264}\label{class_game_a2d1ed72c903868c72d04d8177dc7a264}} 
+\index{Game@{Game}!getGameState@{getGameState}}
+\index{getGameState@{getGameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameState()}{getGameState()}}
+{\footnotesize\ttfamily bool Game\+::get\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a2e43e978921bfb332c0c0a95147af0e7}\label{class_game_a2e43e978921bfb332c0c0a95147af0e7}} 
+\index{Game@{Game}!getWhitePieces@{getWhitePieces}}
+\index{getWhitePieces@{getWhitePieces}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWhitePieces()}{getWhitePieces()}}
+{\footnotesize\ttfamily char Game\+::get\+White\+Pieces (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_aaa267ac4e04700ae9a4e937bb619a329}\label{class_game_aaa267ac4e04700ae9a4e937bb619a329}} 
+\index{Game@{Game}!getWhiteTurn@{getWhiteTurn}}
+\index{getWhiteTurn@{getWhiteTurn}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWhiteTurn()}{getWhiteTurn()}}
+{\footnotesize\ttfamily bool Game\+::get\+White\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 31 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a50771a6de2d7ed13fd495fe39478afb1}\label{class_game_a50771a6de2d7ed13fd495fe39478afb1}} 
+\index{Game@{Game}!initializeBoardPieces@{initializeBoardPieces}}
+\index{initializeBoardPieces@{initializeBoardPieces}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{initializeBoardPieces()}{initializeBoardPieces()}}
+{\footnotesize\ttfamily void Game\+::initialize\+Board\+Pieces (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aac18397b9755371823fabd5a4328948e}\label{class_game_aac18397b9755371823fabd5a4328948e}} 
+\index{Game@{Game}!isCheck@{isCheck}}
+\index{isCheck@{isCheck}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isCheck()}{isCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Game\+::is\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{copyboard\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{bool}]{white,  }\item[{bool}]{hypo }\end{DoxyParamCaption})}
+
+
+
+Definition at line 824 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a0e205eebc58203432647e35cfbf3a802}\label{class_game_a0e205eebc58203432647e35cfbf3a802}} 
+\index{Game@{Game}!isCheck@{isCheck}}
+\index{isCheck@{isCheck}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isCheck()}{isCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Game\+::is\+Check (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{bool}]{white,  }\item[{bool}]{hypo }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a1c27da8c9181f261d498130d11c4200a}\label{class_game_a1c27da8c9181f261d498130d11c4200a}} 
+\index{Game@{Game}!isCheckmate@{isCheckmate}}
+\index{isCheckmate@{isCheckmate}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isCheckmate()}{isCheckmate()}}
+{\footnotesize\ttfamily bool Game\+::is\+Checkmate (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{whiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1019 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a008bd2ec01e2ed06bfc7a75397656509}\label{class_game_a008bd2ec01e2ed06bfc7a75397656509}} 
+\index{Game@{Game}!isInsufficient@{isInsufficient}}
+\index{isInsufficient@{isInsufficient}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isInsufficient()}{isInsufficient()}}
+{\footnotesize\ttfamily bool Game\+::is\+Insufficient (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1119 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ab1b2dab1a15b591ec9dbf0e9fcbc4fc6}\label{class_game_ab1b2dab1a15b591ec9dbf0e9fcbc4fc6}} 
+\index{Game@{Game}!isStalemate@{isStalemate}}
+\index{isStalemate@{isStalemate}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isStalemate()}{isStalemate()}}
+{\footnotesize\ttfamily bool Game\+::is\+Stalemate (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{whiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1062 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aadb0899af4e8f52969b3ccbf02c4f619}\label{class_game_aadb0899af4e8f52969b3ccbf02c4f619}} 
+\index{Game@{Game}!isWhite@{isWhite}}
+\index{isWhite@{isWhite}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isWhite()}{isWhite()}}
+{\footnotesize\ttfamily bool Game\+::is\+White (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Definition at line 306 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a2ece38726327472efedd235a5d48f9fa}\label{class_game_a2ece38726327472efedd235a5d48f9fa}} 
+\index{Game@{Game}!KingMoveSafe@{KingMoveSafe}}
+\index{KingMoveSafe@{KingMoveSafe}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{KingMoveSafe()}{KingMoveSafe()}}
+{\footnotesize\ttfamily bool Game\+::\+King\+Move\+Safe (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{bool}]{whiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 646 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a66d9fdfd21bbb24b643831f861cce25e}\label{class_game_a66d9fdfd21bbb24b643831f861cce25e}} 
+\index{Game@{Game}!kingNotincheck@{kingNotincheck}}
+\index{kingNotincheck@{kingNotincheck}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{kingNotincheck()}{kingNotincheck()}}
+{\footnotesize\ttfamily bool Game\+::king\+Notincheck (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{string}]{playermove\mbox{[}$\,$\mbox{]},  }\item[{bool}]{whiteturn,  }\item[{bool}]{hypo,  }\item[{bool}]{simulation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 437 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aaee257b88aff828c0fea7ebb17673d7d}\label{class_game_aaee257b88aff828c0fea7ebb17673d7d}} 
+\index{Game@{Game}!movePossible@{movePossible}}
+\index{movePossible@{movePossible}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{movePossible()}{movePossible()}}
+{\footnotesize\ttfamily string Game\+::move\+Possible (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{int}]{c,  }\item[{bool}]{whiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 901 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a6f738910eb27883911251cfd786c2ed3}\label{class_game_a6f738910eb27883911251cfd786c2ed3}} 
+\index{Game@{Game}!setGameState@{setGameState}}
+\index{setGameState@{setGameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setGameState()}{setGameState()}}
+{\footnotesize\ttfamily void Game\+::set\+Game\+State (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a218ac3ab975f5bf38fcd73b9fcec8e2a}\label{class_game_a218ac3ab975f5bf38fcd73b9fcec8e2a}} 
+\index{Game@{Game}!updateGameState@{updateGameState}}
+\index{updateGameState@{updateGameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateGameState()}{updateGameState()}}
+{\footnotesize\ttfamily void Game\+::update\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_afb208816a3ccd6e1bce9dbb26f449fed}\label{class_game_afb208816a3ccd6e1bce9dbb26f449fed}} 
+\index{Game@{Game}!updateTiles@{updateTiles}}
+\index{updateTiles@{updateTiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateTiles()}{updateTiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Game\+::update\+Tiles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{string}]{playermove\mbox{[}$\,$\mbox{]},  }\item[{bool}]{whiteturn,  }\item[{bool}]{simulation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a7606188750ba187f97cbe29726947deb}\label{class_game_a7606188750ba187f97cbe29726947deb}} 
+\index{Game@{Game}!updateTiles@{updateTiles}}
+\index{updateTiles@{updateTiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateTiles()}{updateTiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Game\+::update\+Tiles (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 609 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a8edd83d5e57182bcb88e9ca3c434a8b7}\label{class_game_a8edd83d5e57182bcb88e9ca3c434a8b7}} 
+\index{Game@{Game}!updateTiles@{updateTiles}}
+\index{updateTiles@{updateTiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateTiles()}{updateTiles()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Game\+::update\+Tiles (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{bool}]{whiteturn,  }\item[{bool}]{simulation }\end{DoxyParamCaption})}
+
+
+
+Definition at line 667 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ad8869a9274bdee16d460c030c2d6bfa5}\label{class_game_ad8869a9274bdee16d460c030c2d6bfa5}} 
+\index{Game@{Game}!verifyPlayerMove@{verifyPlayerMove}}
+\index{verifyPlayerMove@{verifyPlayerMove}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{verifyPlayerMove()}{verifyPlayerMove()}}
+{\footnotesize\ttfamily bool Game\+::verify\+Player\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}}}]{game,  }\item[{string}]{playermove\mbox{[}$\,$\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{whiteturn,  }\item[{bool}]{hypo,  }\item[{bool}]{simulation,  }\item[{bool}]{realtimewhiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 938 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a94998472eb5ea52ccba822e8d22dd2da}\label{class_game_a94998472eb5ea52ccba822e8d22dd2da}} 
+\index{Game@{Game}!verifyPlayerMoveEnd@{verifyPlayerMoveEnd}}
+\index{verifyPlayerMoveEnd@{verifyPlayerMoveEnd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{verifyPlayerMoveEnd()}{verifyPlayerMoveEnd()}}
+{\footnotesize\ttfamily void Game\+::verify\+Player\+Move\+End (\begin{DoxyParamCaption}\item[{string}]{playermove }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_game_a6ebe9a6b798f1d809fe873c9e9cad48e}\label{class_game_a6ebe9a6b798f1d809fe873c9e9cad48e}} 
+\index{Game@{Game}!verifyPlayerMoveStart@{verifyPlayerMoveStart}}
+\index{verifyPlayerMoveStart@{verifyPlayerMoveStart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{verifyPlayerMoveStart()}{verifyPlayerMoveStart()}}
+{\footnotesize\ttfamily void Game\+::verify\+Player\+Move\+Start (\begin{DoxyParamCaption}\item[{string}]{playermove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 322 of file Game.\+cpp.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_game_ae6fa0350c8ef33e791f1f9a4daa5e3d1}\label{class_game_ae6fa0350c8ef33e791f1f9a4daa5e3d1}} 
+\index{Game@{Game}!Piece@{Piece}}
+\index{Piece@{Piece}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Piece}{Piece}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_piece}{Piece}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 12 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a7f4241aa9ecc051c75f779af132a52ed}\label{class_game_a7f4241aa9ecc051c75f779af132a52ed}} 
+\index{Game@{Game}!Player@{Player}}
+\index{Player@{Player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_player}{Player}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 13 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a2e14561da45711b29301718cac7b328b}\label{class_game_a2e14561da45711b29301718cac7b328b}} 
+\index{Game@{Game}!tiles@{tiles}}
+\index{tiles@{tiles}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classtiles}{tiles}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 11 of file Game.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

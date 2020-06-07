@@ -68,6 +68,8 @@ int main()
         }
         while (!resignation && !offerdraw && !verifyPlayerMove(board, blackPieces, whitePieces, playermove, piece, whiteturn, alphaCoordinates, false, false, whiteturn));
         
+        
+        cout << playermove[0] << playermove[1] << playermove[2] << playermove[3] << endl;
         //model??
         updateMoveList(moveList, moves, playermove);
         updateTiles(board, blackPieces, whitePieces, playermove, piece, alphaCoordinates, whiteturn, false);

@@ -9,7 +9,7 @@ private:
     bool issupported;
 public:
     Queen(bool white, int a, int b, int pieceval);
-    void testfunc(){};
+
 };
 
 #endif /* QUEEN_H */

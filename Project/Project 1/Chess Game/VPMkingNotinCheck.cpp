@@ -14,7 +14,7 @@ bool VPMkingNotinCheck(tiles board[8][8], piecedata piece[], string playermove[]
             copyboard[i][j] = copyTiles(board, i, j);
         }
     }
-
+    
     //direct copying piece data array
     for (int i = 0; i < 32; i++)
     {
@@ -27,8 +27,8 @@ bool VPMkingNotinCheck(tiles board[8][8], piecedata piece[], string playermove[]
         copypiece[i].position[1] = piece[i].position[1];
         copypiece[i].moves = piece[i].moves;
         copypiece[i].new_i = piece[i].new_i;
-
-    }
+    
+}
     
     //simulation with copied data
     updateTiles(copyboard, blackPieces, whitePieces, playermove, copypiece, alphaCoordinates, whiteturn, true);

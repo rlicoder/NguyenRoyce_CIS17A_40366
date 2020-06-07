@@ -1,0 +1,91 @@
+\hypertarget{class_queen}{}\doxysection{Queen Class Reference}
+\label{class_queen}\index{Queen@{Queen}}
+
+
+{\ttfamily \#include $<$Queen.\+h$>$}
+
+Inheritance diagram for Queen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_queen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_queen_a1f181d11577c8ed3e81301f9c3550a48}{Queen}} (bool \mbox{\hyperlink{class_piece_a5c5b2d163f454810b70458da779af435}{white}}, int a, int b, int pieceval)
+\item 
+\mbox{\hyperlink{class_queen_aab822fa0594411fdcc4e3a6fa36b9374}{Queen}} (\mbox{\hyperlink{class_queen}{Queen}} $\ast$obj)
+\item 
+virtual bool \mbox{\hyperlink{class_queen_a045b3e948596f786cc5ca089dff7252a}{check\+Movement}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\item 
+bool \mbox{\hyperlink{class_queen_ae678b3ffe12c5de887e4e2448792df81}{check\+Block}} (int startmoverow, int startmovecol, int endmoverow, int endmovecol, \mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Queen.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_queen_a1f181d11577c8ed3e81301f9c3550a48}\label{class_queen_a1f181d11577c8ed3e81301f9c3550a48}} 
+\index{Queen@{Queen}!Queen@{Queen}}
+\index{Queen@{Queen}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{Queen()}{Queen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Queen\+::\+Queen (\begin{DoxyParamCaption}\item[{bool}]{white,  }\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{pieceval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Queen.\+cpp.
+
+\mbox{\Hypertarget{class_queen_aab822fa0594411fdcc4e3a6fa36b9374}\label{class_queen_aab822fa0594411fdcc4e3a6fa36b9374}} 
+\index{Queen@{Queen}!Queen@{Queen}}
+\index{Queen@{Queen}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{Queen()}{Queen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Queen\+::\+Queen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_queen}{Queen}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 165 of file Queen.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_queen_ae678b3ffe12c5de887e4e2448792df81}\label{class_queen_ae678b3ffe12c5de887e4e2448792df81}} 
+\index{Queen@{Queen}!checkBlock@{checkBlock}}
+\index{checkBlock@{checkBlock}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{checkBlock()}{checkBlock()}}
+{\footnotesize\ttfamily bool Queen\+::check\+Block (\begin{DoxyParamCaption}\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_aefbddd573a4193416cadaaf2ae828855}{Piece}}.
+
+
+
+Definition at line 63 of file Queen.\+cpp.
+
+\mbox{\Hypertarget{class_queen_a045b3e948596f786cc5ca089dff7252a}\label{class_queen_a045b3e948596f786cc5ca089dff7252a}} 
+\index{Queen@{Queen}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Queen@{Queen}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily bool Queen\+::check\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a383653f651b41cb4288710ea2a4d0843}{Piece}}.
+
+
+
+Definition at line 19 of file Queen.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_queen_8h}{Queen.\+h}}\item 
+\mbox{\hyperlink{_queen_8cpp}{Queen.\+cpp}}\end{DoxyCompactItemize}

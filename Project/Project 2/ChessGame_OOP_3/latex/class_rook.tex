@@ -1,0 +1,91 @@
+\hypertarget{class_rook}{}\doxysection{Rook Class Reference}
+\label{class_rook}\index{Rook@{Rook}}
+
+
+{\ttfamily \#include $<$Rook.\+h$>$}
+
+Inheritance diagram for Rook\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rook}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rook_abab8f57ce9e245394a5524c20c85475d}{Rook}} (bool \mbox{\hyperlink{class_piece_a5c5b2d163f454810b70458da779af435}{white}}, int a, int b, int pieceval)
+\item 
+\mbox{\hyperlink{class_rook_a27918fceecfa53b1c216a67b9b945009}{Rook}} (\mbox{\hyperlink{class_rook}{Rook}} $\ast$obj)
+\item 
+virtual bool \mbox{\hyperlink{class_rook_a63f551c28017c5cc2754f3332f6bde40}{check\+Movement}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\item 
+bool \mbox{\hyperlink{class_rook_a417a9ce990aa81c4abfd89308bb89058}{check\+Block}} (int startmoverow, int startmovecol, int endmoverow, int endmovecol, \mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Rook.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rook_abab8f57ce9e245394a5524c20c85475d}\label{class_rook_abab8f57ce9e245394a5524c20c85475d}} 
+\index{Rook@{Rook}!Rook@{Rook}}
+\index{Rook@{Rook}!Rook@{Rook}}
+\doxysubsubsection{\texorpdfstring{Rook()}{Rook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rook\+::\+Rook (\begin{DoxyParamCaption}\item[{bool}]{white,  }\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{pieceval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Rook.\+cpp.
+
+\mbox{\Hypertarget{class_rook_a27918fceecfa53b1c216a67b9b945009}\label{class_rook_a27918fceecfa53b1c216a67b9b945009}} 
+\index{Rook@{Rook}!Rook@{Rook}}
+\index{Rook@{Rook}!Rook@{Rook}}
+\doxysubsubsection{\texorpdfstring{Rook()}{Rook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rook\+::\+Rook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rook}{Rook}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file Rook.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rook_a417a9ce990aa81c4abfd89308bb89058}\label{class_rook_a417a9ce990aa81c4abfd89308bb89058}} 
+\index{Rook@{Rook}!checkBlock@{checkBlock}}
+\index{checkBlock@{checkBlock}!Rook@{Rook}}
+\doxysubsubsection{\texorpdfstring{checkBlock()}{checkBlock()}}
+{\footnotesize\ttfamily bool Rook\+::check\+Block (\begin{DoxyParamCaption}\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_aefbddd573a4193416cadaaf2ae828855}{Piece}}.
+
+
+
+Definition at line 45 of file Rook.\+cpp.
+
+\mbox{\Hypertarget{class_rook_a63f551c28017c5cc2754f3332f6bde40}\label{class_rook_a63f551c28017c5cc2754f3332f6bde40}} 
+\index{Rook@{Rook}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Rook@{Rook}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily bool Rook\+::check\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a383653f651b41cb4288710ea2a4d0843}{Piece}}.
+
+
+
+Definition at line 20 of file Rook.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_rook_8h}{Rook.\+h}}\item 
+\mbox{\hyperlink{_rook_8cpp}{Rook.\+cpp}}\end{DoxyCompactItemize}

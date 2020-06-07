@@ -1,0 +1,107 @@
+\hypertarget{class_pawn}{}\doxysection{Pawn Class Reference}
+\label{class_pawn}\index{Pawn@{Pawn}}
+
+
+{\ttfamily \#include $<$Pawn.\+h$>$}
+
+Inheritance diagram for Pawn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pawn}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pawn_ab7880b10c514f4b9fab9766fbe7c06fd}{Pawn}} ()
+\item 
+\mbox{\hyperlink{class_pawn_ac297e0f77ee2723b18d5dc7f877124ae}{Pawn}} (bool \mbox{\hyperlink{class_piece_a5c5b2d163f454810b70458da779af435}{white}}, int pos, int pieceval)
+\item 
+\mbox{\hyperlink{class_pawn_a6003620baeeb752817c7f8b2daa01329}{Pawn}} (\mbox{\hyperlink{class_pawn}{Pawn}} $\ast$obj)
+\item 
+bool \mbox{\hyperlink{class_pawn_a623e5031e640824fddc6c3f1ea90f198}{get\+Is\+Pawn}} ()
+\item 
+void \mbox{\hyperlink{class_pawn_a305a194b00fd18f79529edb0e03ab2eb}{set\+Is\+Pawn}} (bool dummy)
+\item 
+virtual bool \mbox{\hyperlink{class_pawn_aaf1896603f4b0f604268d38a047ceac8}{check\+Movement}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Pawn.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pawn_ab7880b10c514f4b9fab9766fbe7c06fd}\label{class_pawn_ab7880b10c514f4b9fab9766fbe7c06fd}} 
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Pawn\+::\+Pawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_pawn_ac297e0f77ee2723b18d5dc7f877124ae}\label{class_pawn_ac297e0f77ee2723b18d5dc7f877124ae}} 
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Pawn\+::\+Pawn (\begin{DoxyParamCaption}\item[{bool}]{white,  }\item[{int}]{pos,  }\item[{int}]{pieceval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Pawn.\+cpp.
+
+\mbox{\Hypertarget{class_pawn_a6003620baeeb752817c7f8b2daa01329}\label{class_pawn_a6003620baeeb752817c7f8b2daa01329}} 
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{Pawn()}{Pawn()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Pawn\+::\+Pawn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pawn}{Pawn}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file Pawn.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pawn_aaf1896603f4b0f604268d38a047ceac8}\label{class_pawn_aaf1896603f4b0f604268d38a047ceac8}} 
+\index{Pawn@{Pawn}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily bool Pawn\+::check\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a383653f651b41cb4288710ea2a4d0843}{Piece}}.
+
+
+
+Definition at line 30 of file Pawn.\+cpp.
+
+\mbox{\Hypertarget{class_pawn_a623e5031e640824fddc6c3f1ea90f198}\label{class_pawn_a623e5031e640824fddc6c3f1ea90f198}} 
+\index{Pawn@{Pawn}!getIsPawn@{getIsPawn}}
+\index{getIsPawn@{getIsPawn}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{getIsPawn()}{getIsPawn()}}
+{\footnotesize\ttfamily bool Pawn\+::get\+Is\+Pawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file Pawn.\+h.
+
+\mbox{\Hypertarget{class_pawn_a305a194b00fd18f79529edb0e03ab2eb}\label{class_pawn_a305a194b00fd18f79529edb0e03ab2eb}} 
+\index{Pawn@{Pawn}!setIsPawn@{setIsPawn}}
+\index{setIsPawn@{setIsPawn}!Pawn@{Pawn}}
+\doxysubsubsection{\texorpdfstring{setIsPawn()}{setIsPawn()}}
+{\footnotesize\ttfamily void Pawn\+::set\+Is\+Pawn (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file Pawn.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pawn_8h}{Pawn.\+h}}\item 
+\mbox{\hyperlink{_pawn_8cpp}{Pawn.\+cpp}}\end{DoxyCompactItemize}

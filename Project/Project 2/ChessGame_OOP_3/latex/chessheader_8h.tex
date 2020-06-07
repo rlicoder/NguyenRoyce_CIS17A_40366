@@ -1,0 +1,107 @@
+\hypertarget{chessheader_8h}{}\doxysection{chessheader.\+h File Reference}
+\label{chessheader_8h}\index{chessheader.h@{chessheader.h}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Piece.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tiles.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Knight.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pawn.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bishop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Queen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rook.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}King.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45f}{piecevalue}} \{ \newline
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa1f189a15a64c7c4a1553e876b56c6bf2}{P\+A\+WN}} = 0, 
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fad4a86ac7d51335fcb5756203a88612d6}{K\+N\+I\+G\+HT}} = 1, 
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa6bc4b5ac244475b6bd2595d608f18814}{B\+I\+S\+H\+OP}} = 2, 
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa157524408d6f0fc4b7dc5e52f3dd3b80}{K\+I\+NG}} = 3, 
+\newline
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa58561257be7e2f96f82c0fdb51d7f964}{Q\+U\+E\+EN}} = 4, 
+\mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa49b75ad9a5137e805c60f32ed9cc2820}{R\+O\+OK}} = 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{chessheader_8h_ad0d3c9a96de579bd0c6e4c673e465069}{update\+Game\+State}} (bool whiteturn, \mbox{\hyperlink{class_game}{Game}} \&game, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+int \mbox{\hyperlink{chessheader_8h_abf6a830d43c4deb944f1aeeb66bb7bcd}{piece\+Search\+Array\+Position}} (int row, int col, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\item 
+bool \mbox{\hyperlink{chessheader_8h_ababf20b8a8078c9af443b0c924537ddc}{verify\+Player\+Move}} (\mbox{\hyperlink{class_game}{Game}} game, \mbox{\hyperlink{class_player}{Player}} player, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool whiteturn, bool hypo, bool simulation, bool realtimewhiteturn)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45f}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45f}} 
+\index{chessheader.h@{chessheader.h}!piecevalue@{piecevalue}}
+\index{piecevalue@{piecevalue}!chessheader.h@{chessheader.h}}
+\doxysubsubsection{\texorpdfstring{piecevalue}{piecevalue}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45f}{piecevalue}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAWN@{PAWN}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!PAWN@{PAWN}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa1f189a15a64c7c4a1553e876b56c6bf2}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa1f189a15a64c7c4a1553e876b56c6bf2}} 
+P\+A\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KNIGHT@{KNIGHT}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!KNIGHT@{KNIGHT}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fad4a86ac7d51335fcb5756203a88612d6}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fad4a86ac7d51335fcb5756203a88612d6}} 
+K\+N\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BISHOP@{BISHOP}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!BISHOP@{BISHOP}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa6bc4b5ac244475b6bd2595d608f18814}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa6bc4b5ac244475b6bd2595d608f18814}} 
+B\+I\+S\+H\+OP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KING@{KING}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!KING@{KING}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa157524408d6f0fc4b7dc5e52f3dd3b80}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa157524408d6f0fc4b7dc5e52f3dd3b80}} 
+K\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUEEN@{QUEEN}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!QUEEN@{QUEEN}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa58561257be7e2f96f82c0fdb51d7f964}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa58561257be7e2f96f82c0fdb51d7f964}} 
+Q\+U\+E\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROOK@{ROOK}!chessheader.h@{chessheader.h}}\index{chessheader.h@{chessheader.h}!ROOK@{ROOK}}}\mbox{\Hypertarget{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa49b75ad9a5137e805c60f32ed9cc2820}\label{chessheader_8h_ab663f29e5dde29ffd5e863e64945f45fa49b75ad9a5137e805c60f32ed9cc2820}} 
+R\+O\+OK&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 24 of file chessheader.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{chessheader_8h_abf6a830d43c4deb944f1aeeb66bb7bcd}\label{chessheader_8h_abf6a830d43c4deb944f1aeeb66bb7bcd}} 
+\index{chessheader.h@{chessheader.h}!pieceSearchArrayPosition@{pieceSearchArrayPosition}}
+\index{pieceSearchArrayPosition@{pieceSearchArrayPosition}!chessheader.h@{chessheader.h}}
+\doxysubsubsection{\texorpdfstring{pieceSearchArrayPosition()}{pieceSearchArrayPosition()}}
+{\footnotesize\ttfamily int piece\+Search\+Array\+Position (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file piece\+Search\+Array\+Position.\+cpp.
+
+\mbox{\Hypertarget{chessheader_8h_ad0d3c9a96de579bd0c6e4c673e465069}\label{chessheader_8h_ad0d3c9a96de579bd0c6e4c673e465069}} 
+\index{chessheader.h@{chessheader.h}!updateGameState@{updateGameState}}
+\index{updateGameState@{updateGameState}!chessheader.h@{chessheader.h}}
+\doxysubsubsection{\texorpdfstring{updateGameState()}{updateGameState()}}
+{\footnotesize\ttfamily void update\+Game\+State (\begin{DoxyParamCaption}\item[{bool}]{whiteturn,  }\item[{\mbox{\hyperlink{class_game}{Game}} \&}]{game,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file update\+Game\+State.\+cpp.
+
+\mbox{\Hypertarget{chessheader_8h_ababf20b8a8078c9af443b0c924537ddc}\label{chessheader_8h_ababf20b8a8078c9af443b0c924537ddc}} 
+\index{chessheader.h@{chessheader.h}!verifyPlayerMove@{verifyPlayerMove}}
+\index{verifyPlayerMove@{verifyPlayerMove}!chessheader.h@{chessheader.h}}
+\doxysubsubsection{\texorpdfstring{verifyPlayerMove()}{verifyPlayerMove()}}
+{\footnotesize\ttfamily bool verify\+Player\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}}}]{game,  }\item[{\mbox{\hyperlink{class_player}{Player}}}]{player,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{whiteturn,  }\item[{bool}]{hypo,  }\item[{bool}]{simulation,  }\item[{bool}]{realtimewhiteturn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file verify\+Player\+Move.\+cpp.
+

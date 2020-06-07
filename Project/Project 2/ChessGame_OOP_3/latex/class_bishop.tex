@@ -1,0 +1,91 @@
+\hypertarget{class_bishop}{}\doxysection{Bishop Class Reference}
+\label{class_bishop}\index{Bishop@{Bishop}}
+
+
+{\ttfamily \#include $<$Bishop.\+h$>$}
+
+Inheritance diagram for Bishop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bishop}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bishop_a2dde1eba4b814c0d0a09440208a645a9}{Bishop}} (bool \mbox{\hyperlink{class_piece_a5c5b2d163f454810b70458da779af435}{white}}, int a, int b, int pieceval)
+\item 
+\mbox{\hyperlink{class_bishop_a14179740da7f180954f13f17c8a89731}{Bishop}} (\mbox{\hyperlink{class_bishop}{Bishop}} $\ast$obj)
+\item 
+virtual bool \mbox{\hyperlink{class_bishop_ae335938df0aa4851ebca2449f4cf84e6}{check\+Movement}} (\mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece, bool intentcapture)
+\item 
+bool \mbox{\hyperlink{class_bishop_a1597520594e9371c746f86e1033f8e31}{check\+Block}} (int startmoverow, int startmovecol, int endmoverow, int endmovecol, \mbox{\hyperlink{classtiles}{tiles}} board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&piece)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file Bishop.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bishop_a2dde1eba4b814c0d0a09440208a645a9}\label{class_bishop_a2dde1eba4b814c0d0a09440208a645a9}} 
+\index{Bishop@{Bishop}!Bishop@{Bishop}}
+\index{Bishop@{Bishop}!Bishop@{Bishop}}
+\doxysubsubsection{\texorpdfstring{Bishop()}{Bishop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bishop\+::\+Bishop (\begin{DoxyParamCaption}\item[{bool}]{white,  }\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{pieceval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Bishop.\+cpp.
+
+\mbox{\Hypertarget{class_bishop_a14179740da7f180954f13f17c8a89731}\label{class_bishop_a14179740da7f180954f13f17c8a89731}} 
+\index{Bishop@{Bishop}!Bishop@{Bishop}}
+\index{Bishop@{Bishop}!Bishop@{Bishop}}
+\doxysubsubsection{\texorpdfstring{Bishop()}{Bishop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bishop\+::\+Bishop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bishop}{Bishop}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file Bishop.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bishop_a1597520594e9371c746f86e1033f8e31}\label{class_bishop_a1597520594e9371c746f86e1033f8e31}} 
+\index{Bishop@{Bishop}!checkBlock@{checkBlock}}
+\index{checkBlock@{checkBlock}!Bishop@{Bishop}}
+\doxysubsubsection{\texorpdfstring{checkBlock()}{checkBlock()}}
+{\footnotesize\ttfamily bool Bishop\+::check\+Block (\begin{DoxyParamCaption}\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_aefbddd573a4193416cadaaf2ae828855}{Piece}}.
+
+
+
+Definition at line 37 of file Bishop.\+cpp.
+
+\mbox{\Hypertarget{class_bishop_ae335938df0aa4851ebca2449f4cf84e6}\label{class_bishop_ae335938df0aa4851ebca2449f4cf84e6}} 
+\index{Bishop@{Bishop}!checkMovement@{checkMovement}}
+\index{checkMovement@{checkMovement}!Bishop@{Bishop}}
+\doxysubsubsection{\texorpdfstring{checkMovement()}{checkMovement()}}
+{\footnotesize\ttfamily bool Bishop\+::check\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtiles}{tiles}}}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{startmoverow,  }\item[{int}]{startmovecol,  }\item[{int}]{endmoverow,  }\item[{int}]{endmovecol,  }\item[{vector$<$ \mbox{\hyperlink{class_piece}{Piece}} $\ast$ $>$ \&}]{piece,  }\item[{bool}]{intentcapture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_piece_a383653f651b41cb4288710ea2a4d0843}{Piece}}.
+
+
+
+Definition at line 15 of file Bishop.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bishop_8h}{Bishop.\+h}}\item 
+\mbox{\hyperlink{_bishop_8cpp}{Bishop.\+cpp}}\end{DoxyCompactItemize}

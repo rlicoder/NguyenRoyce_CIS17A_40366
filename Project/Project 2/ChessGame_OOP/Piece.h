@@ -6,6 +6,8 @@ using namespace std;
 
 class Piece
 {
+friend class tiles;
+
 protected:
     int moves;
     bool white;
@@ -37,9 +39,8 @@ public:
     { return this->position[val]; }
     void setPosition(int val, int dummy);
     
+    virtual int checkMovement();
     
-    
-    virtual void testfunc() = 0;
 };
 
 #endif /* PIECE_H */

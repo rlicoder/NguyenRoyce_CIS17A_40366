@@ -28,8 +28,7 @@ public:
     { return this->promotionvalue; }
     void setPromotionValue (bool dummy)
     { this->promotionvalue = dummy; }
-    
-    void testfunc(){};
+
     
 };
 

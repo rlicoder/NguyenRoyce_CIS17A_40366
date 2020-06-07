@@ -9,8 +9,6 @@ private:
     bool incheck;
 public:
     King(bool white, int a, int b, int pieceval);
-   
-    void testfunc(){};
     
     bool getInCheck()
     { return this->incheck; }
