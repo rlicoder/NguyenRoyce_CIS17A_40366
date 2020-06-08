@@ -1,5 +1,4 @@
-
-
+#include "chessheader.h"
 #include <bits/stdc++.h>
 #include "Pawn.h"
 #include "tiles.h"
@@ -30,6 +29,29 @@ Pawn::Pawn(bool white, int pos, int pieceval)
 bool Pawn::checkMovement(tiles board[8][8], int startmoverow, int startmovecol, int endmoverow, int endmovecol, vector<Piece*>& piece, bool intentcapture)
 {
     bool valid = false;
+    
+    int pawnpiecevalue =  this->getPieceValue();
+    
+    if (pawnpiecevalue != 0)
+    {
+        if (pawnpiecevalue == QUEEN)
+        {
+            valid = piece[3]->checkMovement(board, startmoverow, startmovecol, endmoverow, endmovecol, piece, intentcapture);
+        }
+        else if (pawnpiecevalue == KNIGHT)
+        {
+            valid = piece[1]->checkMovement(board, startmoverow, startmovecol, endmoverow, endmovecol, piece, intentcapture);
+        }
+        else if (pawnpiecevalue == BISHOP)
+        {
+            valid = piece[2]->checkMovement(board, startmoverow, startmovecol, endmoverow, endmovecol, piece, intentcapture);
+        }
+        else if (pawnpiecevalue == ROOK)
+        {
+            valid = piece[0]->checkMovement(board, startmoverow, startmovecol, endmoverow, endmovecol, piece, intentcapture);
+        }
+        return valid;
+    }
     
     if (this->white)
     {

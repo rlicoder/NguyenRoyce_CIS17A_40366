@@ -771,7 +771,7 @@ void Game::updateTiles(vector<Piece*>& piece, Player player, bool whiteturn, boo
         board[startmoverow][startmovecol].symbol = ' ';
         
         //updating pawns for double advance and promotion
-//        pawnUpdate(piece, blackPieces, whitePieces, board, simulation);
+        pawnUpdate(piece, simulation);
     }
     
         for (int i = 0; i < 8; i++)
@@ -1299,4 +1299,92 @@ bool Game::cannotMove(vector<Piece*>& piece, int K)
     }
     
     return cannotMove;
+}
+
+void Game::pawnUpdate(vector<Piece*>& piece, bool simulation)
+{
+
+    for (int i = 16; i < 32; i++)
+    {
+        if(piece[i]->getWhite() && piece[i]->getPieceValue() == PAWN)
+        {
+            if (piece[i]->getPosition(0) == 7)
+            {
+                pawnPromotion(piece, true, i);
+            }
+        }
+        else if (!piece[i]->getWhite() && piece[i]->getPieceValue() == PAWN)
+        {
+            if (piece[i]->getPosition(0) == 0)
+            {
+                pawnPromotion(piece, false, i);
+            }
+        }
+    }
+}
+
+void Game::pawnPromotion(vector<Piece*>& piece, bool isWhite, int i)
+{
+    int pvalue;
+    
+    //choosing promotion piece
+    cout << "1. Knight " << endl << "2. Bishop " << endl;
+    cout << "4. Queen " << endl << "5. Rook" << endl;
+    
+    cout << "Enter the promotion value: ";
+    cin >> pvalue;
+    
+    while (pvalue != 1 && pvalue != 2 && pvalue != 4 && pvalue != 5)
+    {
+        cout << "Invalid value: try again ";
+        cin >> pvalue;
+    }
+    
+    //assignment of new_i for movement and new symbol
+    if(isWhite)
+    {
+        if (pvalue == 1)
+        {
+            piece[i]->setPieceValue(1);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = whitePieces[KNIGHT];
+        }
+        else if (pvalue == 2)
+        {
+            piece[i]->setPieceValue(2);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = whitePieces[BISHOP];
+        }
+        else if (pvalue == 4)
+        {
+            piece[i]->setPieceValue(4);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = whitePieces[QUEEN];
+        }
+        else if (pvalue == 5)
+        {
+            piece[i]->setPieceValue(5);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = whitePieces[ROOK];
+        }
+    }
+    else if(!isWhite)
+    {
+        if (pvalue == 1)
+        {
+            piece[i]->setPieceValue(1);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = blackPieces[KNIGHT];
+        }
+        else if (pvalue == 2)
+        {
+            piece[i]->setPieceValue(2);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = blackPieces[BISHOP];
+        }
+        else if (pvalue == 4)
+        {
+            piece[i]->setPieceValue(4);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = blackPieces[QUEEN];
+        }
+        else if (pvalue == 5)
+        {
+            piece[i]->setPieceValue(5);
+            board[piece[i]->getPosition(0)][piece[i]->getPosition(1)].symbol = blackPieces[ROOK];
+        }
+    }
 }

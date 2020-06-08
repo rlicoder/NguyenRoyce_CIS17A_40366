@@ -50,8 +50,6 @@ main()
         game.flipWhiteTurn();
 
         updateGameState(game.getWhiteTurn(), game, piece);
-        
-        
     }
     
     for (int i = 0; i < piece.size(); i++)

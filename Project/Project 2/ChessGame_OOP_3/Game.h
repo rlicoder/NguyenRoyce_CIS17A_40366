@@ -102,6 +102,10 @@ public:
     
     bool cannotMove(vector<Piece*>& piece, int K);
     
+    void pawnUpdate(vector<Piece*>& piece, bool simulation);
+    
+    void pawnPromotion(vector<Piece*>& piece, bool isWhite, int i);
+    
 };
 
 

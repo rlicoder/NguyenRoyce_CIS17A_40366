@@ -24,6 +24,7 @@ protected:
 public:
     int getPieceValue()
     { return this->piecevalue; }
+    void setPieceValue(int dummy);
     
     int getMoves()
     { return this->moves; }

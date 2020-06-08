@@ -1,7 +1,24 @@
-build/Debug/Cygwin-Windows/Pawn.o: Pawn.cpp Pawn.h Piece.h tiles.h
+build/Debug/Cygwin-Windows/Pawn.o: Pawn.cpp chessheader.h Piece.h tiles.h \
+ Knight.h Pawn.h Bishop.h Queen.h Rook.h King.h Player.h Game.h
 
-Pawn.h:
+chessheader.h:
 
 Piece.h:
 
 tiles.h:
+
+Knight.h:
+
+Pawn.h:
+
+Bishop.h:
+
+Queen.h:
+
+Rook.h:
+
+King.h:
+
+Player.h:
+
+Game.h:

@@ -39,3 +39,8 @@ void Piece::addMoves(int dummy)
 {
     this->moves += dummy;
 }
+
+void Piece::setPieceValue(int dummy)
+{
+    this->piecevalue = dummy;
+}
