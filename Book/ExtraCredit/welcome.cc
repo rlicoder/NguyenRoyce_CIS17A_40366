@@ -52,25 +52,7 @@ void List::setNamesAndOrder()
 
 void List::sort()
 {
-    bool swap;
-    string temp;
-    
-    do
-    {
-        swap = false;
-        for (int count = 0; count < (names.size() - 1); count++)
-        {
-            if (strcmpsort(names[count], names[count+1]) == -1)
-            {
-                temp = names[count];
-                names[count] = names[count + 1];
-                names[count + 1] = temp;
-                swap = true;
-            }
-        }
-        //outputNames();
-    } while (swap);
-
+    bool
 }
 
 void List::outputNames()
@@ -85,64 +67,4 @@ void List::outputNames()
 int List::strcmpsort(string left, string right)
 {
     int size;
-    
-    if (left.length() > right.length())
-    {
-        size = left.length();
-    }
-    else 
-    {
-        size = right.length();
-    }
-    
-    leftflag = false;
-    rightflag = false;
-    internalSort(left, right, size);
-    
-    if (sameflag)
-    {
-        
-    }
-    else if (leftflag)
-    {
-        return -1;
-    }
-    else if (rightflag)
-    {
-        return 1;
-    }
-    else if (leftflag && rightflag)
-    {
-        internalSort(left, right, size);
-    }
-    
-}
-
-void List::internalSort(string left, string right, int size)
-{
-    for (int i = 0; i < size && !(leftflag || rightflag); i++)
-    {
-        for (int j = 0; j < 26 && !(leftflag || rightflag); j++)
-        {
-            if (left[i] == '\0')
-            {
-                leftflag = true;
-                continue;
-            }
-            if (left[i] == '\0')
-            {
-                rightflag = true;
-                continue;
-            }
-            if (left[i] == alpha[j])
-            {
-                leftflag = true;
-            }
-            if (right[i] == alpha[j])
-            {
-                rightflag = true;
-            }
-                
-        }
-    }
 }
